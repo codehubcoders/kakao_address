@@ -15,13 +15,13 @@
     <script>
         (function () {
             new daum.Postcode({
+                width: '100%',
                 oncomplete: function (data) {
                     FlutterChannel.postMessage(data);
                 }
             }).embed(HTMLBodyElement);
         })();
     </script>
-    <style>div {width: 100% !important; }</style>
 </body>
 
 </html>
